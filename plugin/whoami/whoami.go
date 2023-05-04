@@ -4,6 +4,7 @@ package whoami
 
 import (
 	"context"
+	"log"
 	"net"
 	"strconv"
 
@@ -57,4 +58,7 @@ func (wh Whoami) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg)
 }
 
 // Name implements the Handler interface.
-func (wh Whoami) Name() string { return name }
+func (wh Whoami) Name() string {
+	log.Println(`whoami Name called 2`)
+	return name
+}

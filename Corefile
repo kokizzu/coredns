@@ -1,0 +1,7 @@
+.:1053 {
+    log . {combined} {
+       class all
+    }
+    debug
+    whoami
+}

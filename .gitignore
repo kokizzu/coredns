@@ -1,4 +1,5 @@
 # only add build artifacts concerning coredns - no editor related files
+.idea
 coredns
 coredns.exe
 build/
